@@ -1,0 +1,25 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml  # 检查yaml文件
+      - id: end-of-file-fixer # 文本文件是否以换行符结束
+      - id: check-merge-conflict # 是否存在合并冲突
+      - id: mixed-line-ending # 检查结束符，使用Unix LF
+      - id: trailing-whitespace # 取消行尾无关紧要的空格
+      - id: check-docstring-first # *.py 中的长字符串说明应该置于文件最顶端
+      - id: requirements-txt-fixer # 排序requirements.txt，并移除异常的包
+      - id: double-quote-string-fixer # 优先采用单引号
+  - repo: https://github.com/PyCQA/flake8
+    rev: 7.0.0
+    hooks:
+      - id: flake8
+  - repo: https://github.com/pycqa/isort
+    rev: 5.13.2
+    hooks:
+      - id: isort
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.26.0
+    hooks:
+      - id: commitizen
+        stages: [ commit-msg ]
