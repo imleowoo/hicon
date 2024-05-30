@@ -31,7 +31,7 @@ setup(
 
     entry_points={
         'console_scripts': [
-            'hicon = hicon.main:main',  # 注册命令
+            'hicon = hicon.main:cli',  # 注册命令
         ],
     },
 
