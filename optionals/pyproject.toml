@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hicon"
+version = "1.0.0"  # 这里需要替换为从 VERSION 文件读取的版本号
+description = "HiContent 一个正文提取工具"
+dependencies = ["gne", "pyppeteer"]
+
+[project.urls]
+Homepage = "https://git.umlife.net/mt-data/open-data"
+Source = "https://git.umlife.net/mt-data/open-data"
